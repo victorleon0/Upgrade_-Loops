@@ -13,13 +13,14 @@ const placesToTravel = [
 
 
 
-for (let i = 0; i < placesToTravel.length; i++) {
-    var cities = []
-    cities.push(placesToTravel[i])
-    
-
-    console.log(cities)
-
+const placesToVisit = [];
+for (const place of placesToTravel) {
+  if (place.id !== 40 && place.id !== 11) {
+    placesToVisit.push(place);
+  }
 }
+
+console.log(placesToVisit);
+
 
 
